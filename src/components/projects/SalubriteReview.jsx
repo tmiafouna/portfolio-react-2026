@@ -3,7 +3,7 @@ import salubrite from "../../assets/images/salubrite.png";
 import salubrite2 from "../../assets/images/salubrite-2.png";
 import salubrite3 from "../../assets/images/salubrite-3.png";
 import salubrite4 from "../../assets/images/salubrite-4.png";
-import mailretour from "../../assets/images/mail-retour.png";
+import mailretour from "../../assets/images/mail_retour.png";
 import mairiebobigny from "../../assets/images/mairie-bobigny.png";
 import { Link } from "react-router-dom";
 import { useState } from "react";
