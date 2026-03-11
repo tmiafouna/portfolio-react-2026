@@ -12,7 +12,7 @@ export const SalubriteReview = () => {
     const [showMoreStack, setShowMoreStack] = useState(false);
 
     return (
-        <div className="min-h-screen bg-background">
+        <div className="bg-background">
             <div className="relative h-96 overflow-hidden">
                 <img 
                     src={mairiebobigny} 

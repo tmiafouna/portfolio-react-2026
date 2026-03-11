@@ -9,7 +9,7 @@ import { useState } from "react";
 export const PatinetteReview = () => {
     const [showMoreStack, setShowMoreStack] = useState(false);
     return (
-        <div className="min-h-screen bg-background">
+        <div className="bg-background">
             <div className="relative h-96 overflow-hidden">
                 <img 
                     src={bannierepatinette} 
