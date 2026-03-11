@@ -4,7 +4,7 @@ export const HeroSection = () => {
     return (
         <section 
             id="hero" 
-            className="pt-20 lg:pt-0 min-h-screen flex items-center justify-center relative"
+            className="pt-40 lg:pt-0 min-h-screen flex items-center justify-center relative"
         >
             <div
                 className="container max-w-4xl mx-auto text-center z-10">
@@ -21,12 +21,9 @@ export const HeroSection = () => {
                         </span>
                     </h1>
                     <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
-                        <span className="text-primary opacity-0 animate-fade-in-delay-2">
-                            <span 
-                                className="relative text-foreground">
-                                {" "}
-                                Développeur Web Full Stack
-                            </span>
+                        <span className="text-primary relative opacity-0 animate-fade-in-delay-2">
+                            {" "}
+                            Développeur Web Full Stack
                         </span>
                     </h2>
                     <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
