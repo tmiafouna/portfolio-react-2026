@@ -3,6 +3,7 @@ import patinette from "../assets/images/patinette.png";
 import salubrite from "../assets/images/salubrite.png";
 import blog from "../assets/images/blog-dsp-paris.png";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 export const ProjectsSection = () => {
     const [showMoreStackSailing, setShowMoreStackSailing] = useState(false);
@@ -106,12 +107,12 @@ export const ProjectsSection = () => {
                                 </button>
                             </div>
                             <div className="flex flex-wrap gap-2 mt-4">
-                                <a 
-                                    href="./projects/sailingloc" 
+                                <Link 
+                                    to="/projects/sailingloc"
                                     className="px-4 py-1 text-sm font-medium rounded-full bg-gray-700 dark:bg-gray-600 hover:bg-gray-500 dark:hover:bg-gray-400 hover:cursor-pointer text-white"
                                 >
                                     Détails
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -172,11 +173,11 @@ export const ProjectsSection = () => {
                                 </button>
                             </div>
                             <div className="flex flex-wrap gap-2 mt-4">
-                                <a 
-                                    href="/projects/patinette" 
+                                <Link 
+                                    to="/projects/patinette"  
                                     className="px-4 py-1 text-sm font-medium rounded-full bg-gray-700 dark:bg-gray-600 hover:bg-gray-500 dark:hover:bg-gray-400 hover:cursor-pointer text-white">
                                     Détails
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -231,11 +232,11 @@ export const ProjectsSection = () => {
                                 </button>
                             </div>
                             <div className="flex flex-wrap gap-2 mt-4">
-                                <a 
-                                    href="/projects/salubrite" 
+                                <Link 
+                                    to="/projects/salubrite" 
                                     className="px-4 py-1 text-sm font-medium rounded-full bg-gray-700 dark:bg-gray-600 hover:bg-gray-500 dark:hover:bg-gray-400 hover:cursor-pointer text-white">
                                     Détails
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -290,11 +291,11 @@ export const ProjectsSection = () => {
                                 </button>
                             </div>
                             <div className="flex flex-wrap gap-2 mt-4">
-                                <a 
-                                    href="/projects/blog"
+                                <Link 
+                                    to="/projects/blog"
                                     className="px-4 py-1 text-sm font-medium rounded-full bg-gray-700 dark:bg-gray-600 hover:bg-gray-500 dark:hover:bg-gray-400 hover:cursor-pointer text-white">
                                     Détails
-                                </a>
+                                </Link>
                                 {/* <span className="px-4 py-1 text-sm font-medium rounded-full bg-primary/80 hover:bg-primary/100  dark:bg-primary/60 dark:hover:bg-primary/80 hover:cursor-pointer text-white">
                                     Consulter
                                 </span> */}

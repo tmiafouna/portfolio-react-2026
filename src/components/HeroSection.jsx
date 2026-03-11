@@ -1,10 +1,10 @@
-import { ArrowDown } from"lucide-react";
+
 
 export const HeroSection = () => {
     return (
         <section 
             id="hero" 
-            className="relative min-h-screen flex flex-col items-center justify-center px-4"
+            className="pt-20 lg:pt-0 min-h-screen flex items-center justify-center relative"
         >
             <div
                 className="container max-w-4xl mx-auto text-center z-10">
@@ -23,10 +23,6 @@ export const HeroSection = () => {
                     <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
                         <span className="text-primary opacity-0 animate-fade-in-delay-2">
                             <span 
-                                style={{ 
-                                    WebkitTextStroke: '1.7px hsl(var(--primary))', 
-                                    WebkitTextFillColor: 'transparent' 
-                                    }} 
                                 className="relative text-foreground">
                                 {" "}
                                 Développeur Web Full Stack
@@ -45,15 +41,6 @@ export const HeroSection = () => {
                     </div>
                 </div>
             </div>
-
-            <a 
-                href="#about"
-            >
-                <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce hover:cursor-pointer">
-                    <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
-                    <ArrowDown className="h-5 w-5 text-primary" />
-                </div>
-            </a>
         </section>
     )
 }
