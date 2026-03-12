@@ -6,12 +6,21 @@ import { ArrowLeft } from "lucide-react";
 import blog from "../../assets/images/blog-dsp-paris.png";
 import { useState, useEffect } from "react";
 
+if (typeof window !== 'undefined') {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+}
+
 export const Blog = () => {
     const [showMoreStack, setShowMoreStack] = useState(false);
+    
     useEffect(() => {
         window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
     }, []);
-    
+
     return (
         <div className="h-auto bg-background text-foreground overflow-x-hidden" style={{ scrollBehavior: 'auto', scrollMarginTop: 0 }}>
             {/* {Background Effects} */}
@@ -38,7 +47,7 @@ export const Blog = () => {
                     <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
                         Blog
                     </h1>
-                    <p className="text-xl text-muted-foreground">
+                    <p className="text-xl text-muted-foreground mb-12">
                         Blog sur ma passion pour la musique et articles détaillés sur mes projets dans l'audiovisuel.
                     </p>
                     {/* Image principale du projet */}
