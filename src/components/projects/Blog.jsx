@@ -4,22 +4,10 @@ import { Footer } from "../Footer";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import blog from "../../assets/images/blog-dsp-paris.png";
-import { useState, useEffect } from "react";
-
-if (typeof window !== 'undefined') {
-    window.scrollTo(0, 0);
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-}
+import { useState } from "react";
 
 export const Blog = () => {
     const [showMoreStack, setShowMoreStack] = useState(false);
-    
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        document.documentElement.scrollTop = 0;
-        document.body.scrollTop = 0;
-    }, []);
 
     return (
         <div className="h-auto bg-background text-foreground overflow-x-hidden" style={{ scrollBehavior: 'auto', scrollMarginTop: 0 }}>
@@ -44,7 +32,7 @@ export const Blog = () => {
                         <ArrowLeft className="w-4 h-4 mr-2" />
                         Retour aux projets
                     </Link>
-                    <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
+                    <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
                         Blog
                     </h1>
                     <p className="text-xl text-muted-foreground mb-12">

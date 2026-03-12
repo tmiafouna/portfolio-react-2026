@@ -9,22 +9,10 @@ import sailingloc3 from "../../assets/images/sailingloc-3.png";
 import sailingloc4 from "../../assets/images/sailingloc-4.png";
 import sailingloc5 from "../../assets/images/sailingloc-5.png";
 import sailingloc6 from "../../assets/images/sailingloc-6.png";
-import { useState, useEffect } from "react";
-
-if (typeof window !== 'undefined') {
-    window.scrollTo(0, 0);
-    document.documentElement.scrollTop = 0;
-    document.body.scrollTop = 0;
-}
+import { useState } from "react";
 
 export const SailingLoc = () => {
     const [showMoreStack, setShowMoreStack] = useState(false);
-
-    useEffect(() => {
-        window.scrollTo(0, 0);
-        document.documentElement.scrollTop = 0;
-        document.body.scrollTop = 0;
-    }, []);
     
     return (
         <div className="h-auto bg-background text-foreground overflow-x-hidden">
