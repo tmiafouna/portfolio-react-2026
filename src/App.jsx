@@ -8,11 +8,10 @@ import { NotFound } from "./pages/NotFound"
 
 function App() {
   useEffect(() => {
-        if (!localStorage.getItem('theme')) {
-            localStorage.setItem('theme', 'dark');
-            document.documentElement.classList.add('dark');
-        }
-    }, []);
+      localStorage.setItem('theme', 'dark');
+      document.documentElement.classList.add('dark');
+      document.documentElement.setAttribute('data-theme', 'dark');
+  }, []);
   return (
     <>
       <BrowserRouter>
