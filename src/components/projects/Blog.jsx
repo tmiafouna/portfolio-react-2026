@@ -4,7 +4,7 @@ import { Footer } from "../Footer";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import blog from "../../assets/images/blog-dsp-paris.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export const Blog = () => {
     const [showMoreStack, setShowMoreStack] = useState(false);
