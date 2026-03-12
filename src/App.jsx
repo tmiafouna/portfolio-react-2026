@@ -5,8 +5,16 @@ import { Patinette } from "./components/projects/Patinette"
 import { Salubrite } from "./components/projects/Salubrite"
 import { Blog } from "./components/projects/Blog"
 import { NotFound } from "./pages/NotFound"
+import { useEffect } from 'react'
 
 function App() {
+  useEffect(() => {
+        const storedTheme = localStorage.getItem("theme");
+        if (!storedTheme || storedTheme !== "light") {
+            localStorage.setItem("theme", "dark");
+            document.documentElement.classList.add("dark");
+        }
+    }, []);
   return (
     <>
       <BrowserRouter>
