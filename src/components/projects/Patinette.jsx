@@ -7,10 +7,22 @@ import { ArrowLeft } from "lucide-react";
 import patinette from "../../assets/images/patinette.png";
 import patinette2 from "../../assets/images/patinette-2.png";
 import patinette3 from "../../assets/images/patinette-3.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+if (typeof window !== 'undefined') {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+}
 
 export const Patinette = () => {
     const [showMoreStack, setShowMoreStack] = useState(false);
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    }, []);
 
     return (
         <div className="h-auto bg-background text-foreground overflow-x-hidden">

@@ -4,13 +4,25 @@ import { Footer } from "../Footer";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import blog from "../../assets/images/blog-dsp-paris.png";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
+if (typeof window !== 'undefined') {
+    window.scrollTo(0, 0);
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
+}
 
 export const Blog = () => {
     const [showMoreStack, setShowMoreStack] = useState(false);
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    }, []);
+
     return (
-        <div className="h-auto bg-background text-foreground overflow-x-hidden" style={{ scrollBehavior: 'auto', scrollMarginTop: 0 }}>
+        <div className="h-auto bg-background text-foreground overflow-x-hidden">
             {/* {Background Effects} */}
             <StarBackground />
 
