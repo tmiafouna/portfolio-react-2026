@@ -8,7 +8,7 @@ import salubrite2 from "../../assets/images/salubrite-2.png";
 import salubrite3 from "../../assets/images/salubrite-3.png";
 import salubrite4 from "../../assets/images/salubrite-4.png";
 import mailretour from "../../assets/images/mail_retour.png";
-import mairiebobigny from "../../assets/images/mairie-bobigny.png";
+// import mairiebobigny from "../../assets/images/mairie-bobigny.png";
 import { useState } from "react";
 
 export const Salubrite = () => {
@@ -23,36 +23,25 @@ export const Salubrite = () => {
 
             {/* Main Content */}
             <main>
-                <div className="relative h-96 overflow-hidden">
-                    <img 
-                        src={mairiebobigny} 
-                        alt="Application Salubrité" 
-                        className="w-full h-full object-cover" 
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-background/30"></div>
-                    <div className="absolute bottom-8 left-8 right-8">
-                        <Link 
-                            to="/#projects" 
-                            className="inline-flex items-center text-primary hover:text-primary/80 mb-4 transition-colors font-medium"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                sessionStorage.setItem('scrollToSection', '#projects');
-                                window.location.href = '/';
-                            }}
-                        >
-                            <ArrowLeft className="w-4 h-4 mr-2" />
-                            Retour aux projets
-                        </Link>
-                        <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
-                            Application Salubrité
-                        </h1>
-                        <p className="text-xl text-muted-foreground">
-                            Prototype d'application de suivi et gestion de la santé publique
-                        </p>
-                    </div>
-                </div>
-
-                <div className="container mx-auto max-w-4xl px-4 py-12">
+                <div className="container mx-auto max-w-4xl px-4 py-12 pt-40">
+                    <Link 
+                        to="/#projects" 
+                        className="inline-flex items-center text-primary hover:text-primary/80 mb-4 transition-colors font-medium"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            sessionStorage.setItem('scrollToSection', '#projects');
+                            window.location.href = '/';
+                        }}
+                    >
+                        <ArrowLeft className="w-4 h-4 mr-2" />
+                        Retour aux projets
+                    </Link>
+                    <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
+                        Application Salubrité
+                    </h1>
+                    <p className="text-xl text-muted-foreground">
+                        Prototype d'application de suivi et gestion de la santé publique
+                    </p>
                     {/* Image principale du projet */}
                     <div className="mb-12">
                         <img 

@@ -24,7 +24,7 @@ export const SailingLoc = () => {
 
             {/* Main Content */}
             <main>
-                <div className="container mx-auto max-w-4xl px-4 py-12 pt-60">
+                <div className="container mx-auto max-w-4xl px-4 py-12 pt-40">
                     <Link 
                         to="/#projects" 
                         className="inline-flex items-center text-primary hover:text-primary/80 mb-6 transition-colors font-medium"
