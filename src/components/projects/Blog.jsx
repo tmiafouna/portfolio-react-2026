@@ -1,17 +1,28 @@
-import { ArrowLeft, ExternalLink, Github, Calendar, Users, MapPin, Star, PenTool, FileText, MessageSquare } from "lucide-react";
-import blog from "../../assets/images/blog-dsp-paris.png";
+import { StarBackground } from "../StarBackground";
+import { Navbar } from "../Navbar";
+import { Footer } from "../Footer";
 import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
+import blog from "../../assets/images/blog-dsp-paris.png";
 import { useState } from "react";
 
-export const BlogReview = () => {
+export const Blog = () => {
     const [showMoreStack, setShowMoreStack] = useState(false);
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
     
     return (
-        <div className="bg-background">
-            <div className="relative h-96 overflow-hidden">
+        <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+            {/* {Background Effects} */}
+            <StarBackground />
+
+            {/* Navbar */}
+            <Navbar isProjectPage={true} />
+
+            {/* Main Content */}
+            <main>
+                <div className="relative h-96 overflow-hidden">
                 <img 
                     src={blog} 
                     alt="Blog" 
@@ -96,6 +107,10 @@ export const BlogReview = () => {
                     </p>
                 </div>                
             </div>
+            </main>
+
+            {/* Footer */}
+            <Footer />
         </div>
     );
 };

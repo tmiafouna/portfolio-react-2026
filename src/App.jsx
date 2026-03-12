@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { Home } from "./pages/Home"
-import { SailingLoc } from "./pages/SailingLoc"
-import { Patinette } from "./pages/Patinette";
-import { Salubrite } from "./pages/Salubrite";
-import { Blog } from "./pages/Blog";
+import { SailingLoc } from "./components/projects/SailingLoc"
+import { Patinette } from "./components/projects/Patinette"
+import { Salubrite } from "./components/projects/Salubrite"
+import { Blog } from "./components/projects/Blog"
 import { NotFound } from "./pages/NotFound"
 
 function App() {
