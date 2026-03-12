@@ -5,7 +5,10 @@ import { useState } from "react";
 
 export const BlogReview = () => {
     const [showMoreStack, setShowMoreStack] = useState(false);
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+    
     return (
         <div className="bg-background">
             <div className="relative h-96 overflow-hidden">

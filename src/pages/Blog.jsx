@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 
 export const Blog = () => {
     return (
-        <div className="min-h-screen bg-background text-foreground overflow-x-hidden flex flex-col">
+        <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
             {/* Background Effects */}
             <StarBackground />
 
@@ -13,7 +13,7 @@ export const Blog = () => {
             <Navbar isProjectPage={true} />
 
             {/* Main Content */}
-            <main className="flex-grow">
+            <main>
                 <BlogReview />
             </main>
 
