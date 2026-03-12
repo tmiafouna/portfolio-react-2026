@@ -28,10 +28,10 @@ export const Salubrite = () => {
     }, []);
 
     const handleReturnToProjects = (e) => {
-        e.preventDefault();
-        sessionStorage.setItem('scrollToSection', '#projects');
-        navigate('/');
-    };
+    e.preventDefault();
+    localStorage.setItem('scrollToSection', '#projects');
+    navigate('/');
+};
 
     return (
         <div className="h-auto bg-background text-foreground overflow-x-hidden">

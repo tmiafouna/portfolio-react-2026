@@ -27,7 +27,7 @@ export const Patinette = () => {
 
     const handleReturnToProjects = (e) => {
         e.preventDefault();
-        sessionStorage.setItem('scrollToSection', '#projects');
+        localStorage.setItem('scrollToSection', '#projects');
         navigate('/');
     };
 
