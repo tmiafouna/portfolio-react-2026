@@ -12,7 +12,7 @@ import { useState } from "react";
 export const Patinette = () => {
     const [showMoreStack, setShowMoreStack] = useState(false);
     return (
-        <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+        <div className="h-auto bg-background text-foreground overflow-x-hidden">
             {/* {Background Effects} */}
             <StarBackground />
 
