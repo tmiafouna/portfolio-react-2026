@@ -21,7 +21,7 @@ export const Home = () => {
             if (scrollToSection) {
                 localStorage.removeItem('scrollToSection');
             }
-            
+
             setTimeout(() => {
                 const element = document.querySelector(targetSection);
                 element?.scrollIntoView({ behavior: 'smooth' });
@@ -30,7 +30,7 @@ export const Home = () => {
                     localStorage.removeItem('triggerContactAnimation');
                     window.dispatchEvent(new CustomEvent('navigateToContact'));
                 }
-            }, 100);
+            }, 300);
         }
     }, []);
 
