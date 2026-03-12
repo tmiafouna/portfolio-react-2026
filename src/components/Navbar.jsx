@@ -30,8 +30,9 @@ export const Navbar = ({ isProjectPage = false }) => {
         if (storedTheme === "dark") {
             setIsDarkMode(true);
             document.documentElement.classList.add("dark");
+        } else if (!storedTheme) {
+            setIsDarkMode(true);
         } else {
-            localStorage.setItem("theme", "light");
             setIsDarkMode(false);
             document.documentElement.classList.remove("dark");
         }
