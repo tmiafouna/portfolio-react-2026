@@ -3,7 +3,7 @@ import { Navbar } from "../Navbar";
 import { Footer } from "../Footer";
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-// import bannierepatinette from "../../assets/images/banniere-patinette.png";
+import bannierepatinette from "../../assets/images/banniere-patinette.png";
 import patinette from "../../assets/images/patinette.png";
 import patinette2 from "../../assets/images/patinette-2.png";
 import patinette3 from "../../assets/images/patinette-3.png";
@@ -22,25 +22,35 @@ export const Patinette = () => {
 
             {/* Main Content */}
             <main>
-                <div className="container mx-auto max-w-4xl px-4 py-12 pt-40">
-                    <Link 
-                        to="/#projects" 
-                        className="inline-flex items-center text-primary hover:text-primary/80 mb-4 transition-colors font-medium"
-                        onClick={(e) => {
-                            e.preventDefault();
-                            sessionStorage.setItem('scrollToSection', '#projects');
-                            window.location.href = '/';
-                        }}
-                    >
-                        <ArrowLeft className="w-4 h-4 mr-2" />
-                        Retour aux projets
-                    </Link>
-                    <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-                        Patinette
-                    </h1>
-                    <p className="text-xl text-muted-foreground mb-12">
-                        Site WordPress de location de trottinettes électriques avec thème personnalisé
-                    </p>
+                <div className="relative h-96 overflow-hidden">
+                    <img 
+                        src={bannierepatinette} 
+                        alt="Patinette" 
+                        className="w-full h-full object-cover" 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-background/30"></div>
+                    <div className="absolute bottom-8 left-8 right-8">
+                        <Link 
+                            to="/#projects" 
+                            className="inline-flex items-center text-primary hover:text-primary/80 mb-4 transition-colors font-medium"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                sessionStorage.setItem('scrollToSection', '#projects');
+                                window.location.href = '/';
+                            }}
+                        >
+                            <ArrowLeft className="w-4 h-4 mr-2" />
+                            Retour aux projets
+                        </Link>
+                        <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
+                            Patinette
+                        </h1>
+                        <p className="text-xl text-muted-foreground">
+                            Site WordPress de location de trottinettes électriques avec thème personnalisé
+                        </p>
+                    </div>
+                </div>
+                <div className="container mx-auto max-w-4xl px-4 py-12">
                     {/* Image principale du projet */}
                     <div className="mb-12">
                         <img 
