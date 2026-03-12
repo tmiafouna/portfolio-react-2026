@@ -10,22 +10,29 @@ import { useEffect } from 'react';
 
 export const Home = () => {
     useEffect(() => {
-    const scrollToSection = localStorage.getItem('scrollToSection');
-    const triggerContactAnimation = localStorage.getItem('triggerContactAnimation');
-    
-    if (scrollToSection) {
-        localStorage.removeItem('scrollToSection');
-        setTimeout(() => {
-            const element = document.querySelector(scrollToSection);
-            element?.scrollIntoView({ behavior: 'smooth' });
-            
-            if (scrollToSection === '#contact' && triggerContactAnimation === 'true') {
-                localStorage.removeItem('triggerContactAnimation');
-                window.dispatchEvent(new CustomEvent('navigateToContact'));
+        const hash = window.location.hash;
+        
+        const scrollToSection = localStorage.getItem('scrollToSection');
+        const triggerContactAnimation = localStorage.getItem('triggerContactAnimation');
+        
+        const targetSection = scrollToSection || hash;
+        
+        if (targetSection) {
+            if (scrollToSection) {
+                localStorage.removeItem('scrollToSection');
             }
-        }, 100);
-    }
-}, []);
+            
+            setTimeout(() => {
+                const element = document.querySelector(targetSection);
+                element?.scrollIntoView({ behavior: 'smooth' });
+                
+                if (targetSection === '#contact' && triggerContactAnimation === 'true') {
+                    localStorage.removeItem('triggerContactAnimation');
+                    window.dispatchEvent(new CustomEvent('navigateToContact'));
+                }
+            }, 100);
+        }
+    }, []);
 
 
     return (
