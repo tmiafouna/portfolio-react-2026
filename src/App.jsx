@@ -7,11 +7,6 @@ import { Blog } from "./components/projects/Blog"
 import { NotFound } from "./pages/NotFound"
 
 function App() {
-  useEffect(() => {
-      localStorage.setItem('theme', 'dark');
-      document.documentElement.classList.add('dark');
-      document.documentElement.setAttribute('data-theme', 'dark');
-  }, []);
   return (
     <>
       <BrowserRouter>
