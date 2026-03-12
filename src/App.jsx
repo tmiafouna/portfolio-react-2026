@@ -7,6 +7,12 @@ import { Blog } from "./components/projects/Blog"
 import { NotFound } from "./pages/NotFound"
 
 function App() {
+  useEffect(() => {
+        if (!localStorage.getItem('theme')) {
+            localStorage.setItem('theme', 'dark');
+            document.documentElement.classList.add('dark');
+        }
+    }, []);
   return (
     <>
       <BrowserRouter>
