@@ -1,7 +1,7 @@
 import { StarBackground } from "../StarBackground";
 import { Navbar } from "../Navbar";
 import { Footer } from "../Footer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import salubrite from "../../assets/images/salubrite.png";
 import salubrite2 from "../../assets/images/salubrite-2.png";
@@ -19,12 +19,19 @@ if (typeof window !== 'undefined') {
 
 export const Salubrite = () => {
     const [showMoreStack, setShowMoreStack] = useState(false);
+    const navigate = useNavigate();
     
     useEffect(() => {
         window.scrollTo(0, 0);
         document.documentElement.scrollTop = 0;
         document.body.scrollTop = 0;
     }, []);
+
+    const handleReturnToProjects = (e) => {
+        e.preventDefault();
+        sessionStorage.setItem('scrollToSection', '#projects');
+        navigate('/');
+    };
 
     return (
         <div className="h-auto bg-background text-foreground overflow-x-hidden">
@@ -40,11 +47,7 @@ export const Salubrite = () => {
                     <Link 
                         to="/#projects" 
                         className="inline-flex items-center text-primary hover:text-primary/80 mb-4 transition-colors font-medium"
-                        onClick={(e) => {
-                            e.preventDefault();
-                            sessionStorage.setItem('scrollToSection', '#projects');
-                            window.location.href = '/';
-                        }}
+                        onClick={handleReturnToProjects}
                     >
                         <ArrowLeft className="w-4 h-4 mr-2" />
                         Retour aux projets
