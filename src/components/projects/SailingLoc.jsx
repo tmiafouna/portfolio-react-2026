@@ -24,33 +24,33 @@ export const SailingLoc = () => {
 
                 {/* Main Content */}
                 <main>
-                    <div className="relative h-96 overflow-hidden">
+                    <div className="container mx-auto max-w-4xl px-4 py-6">
+                        <Link 
+                            to="/#projects" 
+                            className="inline-flex items-center text-primary hover:text-primary/80 mb-4 transition-colors font-medium"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                sessionStorage.setItem('scrollToSection', '#projects');
+                                window.location.href = '/';
+                            }}
+                        >
+                            <ArrowLeft className="w-4 h-4 mr-2" />
+                            Retour aux projets
+                        </Link>
+                        <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
+                            SailingLoc
+                        </h1>
+                        <p className="text-xl text-muted-foreground">
+                            Plateforme web de réservation de bateaux et voiliers entre particuliers
+                        </p>
+                    </div>
+                    <div className="relative h-48 overflow-hidden">
                         <img 
                             src={sailingloc} 
                             alt="SailingLoc" 
                             className="w-full h-full object-cover" 
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-background/30"></div>
-                        <div className="absolute bottom-8 left-8 right-8">
-                            <Link 
-                                to="/#projects" 
-                                className="inline-flex items-center text-primary hover:text-primary/80 mb-4 transition-colors font-medium"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    sessionStorage.setItem('scrollToSection', '#projects');
-                                    window.location.href = '/';
-                                }}
-                            >
-                                <ArrowLeft className="w-4 h-4 mr-2" />
-                                Retour aux projets
-                            </Link>
-                            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-2">
-                                SailingLoc
-                            </h1>
-                            <p className="text-xl text-muted-foreground">
-                                Plateforme web de réservation de bateaux et voiliers entre particuliers
-                            </p>
-                        </div>
                     </div>
 
                     <div className="container mx-auto max-w-4xl px-4 py-12">
