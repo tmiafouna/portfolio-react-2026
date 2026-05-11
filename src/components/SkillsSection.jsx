@@ -159,8 +159,6 @@ export const SkillsSection = () => {
                             </div>
                             <p className="text-black/90 dark:text-white/90 font-medium">Bootstrap</p>
                         </div>
-                    </div>
-                    <div className="skill-box">
                         <div className="skill-item">
                             <div className="skill-icon">
                                 <SiTailwindcss className="text-primary" size={22} />
@@ -234,9 +232,6 @@ export const SkillsSection = () => {
                             <p className="text-black/90 dark:text-white/90 font-medium">Docker</p>
                         </div>
                     </div>
-                </div>
-
-                <div className="skill-container gradient-border p-6 backdrop-blur transition-all duration-300 will-change-transform ring-1 ring-primary/15 hover:ring-2 hover:ring-primary/40 hover:scale-[1.015]">
                     <div className="skill-box">
                         <div className="skill-item">
                             <div className="skill-icon">
@@ -320,8 +315,6 @@ export const SkillsSection = () => {
                             </div>
                             <p className="text-black/90 dark:text-white/90 font-medium">VS Code</p>
                         </div>
-                    </div>
-                    <div className="skill-box">
                         <div className="skill-item">
                             <div className="skill-icon">
                                 <div className="bg-primary w-5 h-5 text-black rounded-md flex items-center justify-center text-[10px] font-bold">
