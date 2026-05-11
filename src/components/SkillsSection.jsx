@@ -3,24 +3,32 @@ import {
   SiCss3,
   SiJavascript,
   SiTypescript,
+  SiVuedotjs,
   SiReact,
   SiAngular,
   SiIonic,
+  SiFlutter,
+  SiDart,
   SiFirebase,
-  SiQuasar,
   SiBootstrap,
   SiTailwindcss,
   SiVite,
   SiNodedotjs,
   SiExpress,
   SiPhp,
+  SiMamp,
+  SiLaravel,
   SiSymfony,
   SiPython,
   SiMysql,
   SiMongodb,
+  SiDocker,
   SiWordpress,
   SiGit,
-  SiDocker,
+  SiVercel,
+  SiNetlify,
+  SiJest,
+  SiCypress,
   SiPostman,
   SiFigma,
   SiAdobephotoshop,
@@ -28,7 +36,6 @@ import {
   SiCanva,
   SiBlender,
   SiUnrealengine,
-  SiMamp,
 } from "react-icons/si";
 import { useState, useEffect, useRef } from "react";
 
@@ -106,9 +113,15 @@ export const SkillsSection = () => {
                         </div>
                         <div className="skill-item">
                             <div className="skill-icon">
+                                <SiVuedotjs className="text-primary" size={22} />
+                            </div>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Vue.js</p>
+                        </div>
+                        <div className="skill-item">
+                            <div className="skill-icon">
                                 <SiReact className="text-primary" size={22} />
                             </div>
-                            <p className="text-black/90 dark:text-white/90 font-medium">ReactJS</p>
+                            <p className="text-black/90 dark:text-white/90 font-medium">React.js</p>
                         </div>
                         <div className="skill-item">
                             <div className="skill-icon">
@@ -124,9 +137,15 @@ export const SkillsSection = () => {
                         </div>
                         <div className="skill-item">
                             <div className="skill-icon">
-                                <SiReact className="text-primary" size={22} />
+                                <SiFlutter className="text-primary" size={22} />
                             </div>
-                            <p className="text-black/90 dark:text-white/90 font-medium">ReactNative</p>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Flutter</p>
+                        </div>
+                        <div className="skill-item">
+                            <div className="skill-icon">
+                                <SiDart className="text-primary" size={22} />
+                            </div>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Dart</p>
                         </div>
                         <div className="skill-item">
                             <div className="skill-icon">
@@ -136,16 +155,12 @@ export const SkillsSection = () => {
                         </div>
                         <div className="skill-item">
                             <div className="skill-icon">
-                                <SiQuasar className="text-primary" size={22} />
-                            </div>
-                            <p className="text-black/90 dark:text-white/90 font-medium">Quasar</p>
-                        </div>
-                        <div className="skill-item">
-                            <div className="skill-icon">
                                 <SiBootstrap className="text-primary" size={22} />
                             </div>
                             <p className="text-black/90 dark:text-white/90 font-medium">Bootstrap</p>
                         </div>
+                    </div>
+                    <div className="skill-box">
                         <div className="skill-item">
                             <div className="skill-icon">
                                 <SiTailwindcss className="text-primary" size={22} />
@@ -184,6 +199,12 @@ export const SkillsSection = () => {
                         </div>
                         <div className="skill-item">
                             <div className="skill-icon">
+                                <SiLaravel className="text-primary" size={22} />
+                            </div>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Laravel</p>
+                        </div>
+                        <div className="skill-item">
+                            <div className="skill-icon">
                                 <SiSymfony className="text-primary" size={22} />
                             </div>
                             <p className="text-black/90 dark:text-white/90 font-medium">Symfony</p>
@@ -194,8 +215,6 @@ export const SkillsSection = () => {
                             </div>
                             <p className="text-black/90 dark:text-white/90 font-medium">Python</p>
                         </div>
-                    </div>
-                    <div className="skill-box">
                         <div className="skill-item">
                             <div className="skill-icon">
                                 <SiMysql className="text-primary" size={22} />
@@ -208,6 +227,17 @@ export const SkillsSection = () => {
                             </div>
                             <p className="text-black/90 dark:text-white/90 font-medium">MongoDB</p>
                         </div>
+                        <div className="skill-item">
+                            <div className="skill-icon">
+                                <SiDocker className="text-primary" size={22} />
+                            </div>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Docker</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="skill-container gradient-border p-6 backdrop-blur transition-all duration-300 will-change-transform ring-1 ring-primary/15 hover:ring-2 hover:ring-primary/40 hover:scale-[1.015]">
+                    <div className="skill-box">
                         <div className="skill-item">
                             <div className="skill-icon">
                                 <SiWordpress className="text-primary" size={22} />
@@ -224,11 +254,55 @@ export const SkillsSection = () => {
                         </div>
                         <div className="skill-item">
                             <div className="skill-icon">
-                                <div className="bg-primary w-5 h-5 text-black rounded-md flex items-center justify-center text-[10px] font-bold">
-                                    VS
+                                <SiGit className="text-primary" size={22} />
+                            </div>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Git / GitHub</p>
+                        </div>
+                        <div className="skill-item">
+                            <div className="skill-icon">
+                                <SiVercel className="text-primary" size={22} />
+                            </div>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Vercel</p>
+                        </div>
+                        <div className="skill-item">
+                            <div className="skill-icon">
+                                <div className="bg-primary w-5 h-5 text-black rounded-md flex items-center justify-center text-[13px] font-bold">
+                                    R
                                 </div>
                             </div>
-                            <p className="text-black/90 dark:text-white/90 font-medium">VS Code</p>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Render</p>
+                        </div>
+                        <div className="skill-item">
+                            <div className="skill-icon">
+                                <SiNetlify className="text-primary" size={22} />
+                            </div>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Netlify</p>
+                        </div>
+                        <div className="skill-item">
+                            <div className="skill-icon">
+                                <SiJest className="text-primary" size={22} />
+                            </div>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Jest</p>
+                        </div>
+                        <div className="skill-item">
+                            <div className="skill-icon">
+                                <SiCypress className="text-primary" size={22} />
+                            </div>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Cypress</p>
+                        </div>
+                        <div className="skill-item">
+                            <div className="skill-icon">
+                                <SiPostman className="text-primary" size={22} />
+                            </div>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Postman</p>
+                        </div>
+                        <div className="skill-item">
+                            <div className="skill-icon">
+                                <div className="bg-primary w-5 h-5 text-black rounded-md flex items-center justify-center text-[13px] font-bold">
+                                    L
+                                </div>
+                            </div>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Locust</p>
                         </div>
                         <div className="skill-item">
                             <div className="skill-icon">
@@ -240,21 +314,29 @@ export const SkillsSection = () => {
                         </div>
                         <div className="skill-item">
                             <div className="skill-icon">
-                                <SiGit className="text-primary" size={22} />
+                                <div className="bg-primary w-5 h-5 text-black rounded-md flex items-center justify-center text-[10px] font-bold">
+                                    VS
+                                </div>
                             </div>
-                            <p className="text-black/90 dark:text-white/90 font-medium">Git / GitHub</p>
+                            <p className="text-black/90 dark:text-white/90 font-medium">VS Code</p>
+                        </div>
+                    </div>
+                    <div className="skill-box">
+                        <div className="skill-item">
+                            <div className="skill-icon">
+                                <div className="bg-primary w-5 h-5 text-black rounded-md flex items-center justify-center text-[10px] font-bold">
+                                    CC
+                                </div>
+                            </div>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Claude Code</p>
                         </div>
                         <div className="skill-item">
                             <div className="skill-icon">
-                                <SiDocker className="text-primary" size={22} />
+                                <div className="bg-primary w-5 h-5 text-black rounded-md flex items-center justify-center text-[13px] font-bold">
+                                    P
+                                </div>
                             </div>
-                            <p className="text-black/90 dark:text-white/90 font-medium">Docker</p>
-                        </div>
-                        <div className="skill-item">
-                            <div className="skill-icon">
-                                <SiPostman className="text-primary" size={22} />
-                            </div>
-                            <p className="text-black/90 dark:text-white/90 font-medium">Postman</p>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Pencil</p>
                         </div>
                         <div className="skill-item">
                             <div className="skill-icon">
