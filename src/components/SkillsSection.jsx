@@ -302,10 +302,10 @@ export const SkillsSection = () => {
                         <div className="skill-item">
                             <div className="skill-icon">
                                 <div className="bg-primary w-5 h-5 text-black rounded-md flex items-center justify-center text-[13px] font-bold">
-                                    W
+                                    D
                                 </div>
                             </div>
-                            <p className="text-black/90 dark:text-white/90 font-medium">Windsurf</p>
+                            <p className="text-black/90 dark:text-white/90 font-medium">Devin</p>
                         </div>
                         <div className="skill-item">
                             <div className="skill-icon">
