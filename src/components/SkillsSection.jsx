@@ -432,7 +432,7 @@ export const SkillsSection = () => {
                                       </div>
 
                                       <div className="text-sm sm:text-base text-foreground/70 mt-1">
-                                          Pharmacie du Centre
+                                          Pharmacie du Centre Aubervilliers
                                       </div>
 
                                       <div className="text-sm sm:text-base text-foreground/60 mt-2">
