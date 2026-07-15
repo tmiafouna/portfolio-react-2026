@@ -412,6 +412,38 @@ export const SkillsSection = () => {
 
                 <div className="space-y-14">
                   <div className="relative grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-8">
+                      <div className="hidden md:block" />
+
+                      <div className="relative hidden md:flex items-center justify-center">
+                          <div className="h-3 w-3 rounded-full bg-primary shadow-[0_0_0_6px_rgba(56,189,248,0.15)]" />
+                      </div>
+
+                          <div className="md:pl-2">
+                              <div className="gradient-border backdrop-blur transition-all duration-300 will-change-transform ring-1 ring-primary/15 hover:ring-2 hover:ring-primary/40 hover:scale-[1.015] p-4 sm:p-6 card-hover">
+                                  <div className="flex flex-col items-start text-left w-full">
+                                      <div className="min-[1138px]:flex min-[1138px]:justify-center min-[1138px]">
+                                          <span className="text-xs font-semibold text-primary bg-primary/15 px-2.5 py-1 rounded-md">
+                                          Expérience
+                                          </span>
+                                      </div>
+
+                                      <div className="text-lg sm:text-xl font-semibold text-foreground mt-3">
+                                          Responsable Développement Digital
+                                      </div>
+
+                                      <div className="text-sm sm:text-base text-foreground/70 mt-1">
+                                          Pharmacie du Centre
+                                      </div>
+
+                                      <div className="text-sm sm:text-base text-foreground/60 mt-2">
+                                          JUIN 2026 - DEC. 2026
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                  </div>
+
+                  <div className="relative grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-8">
                       <div className="md:pr-2">
                           <div className="gradient-border backdrop-blur transition-all duration-300 will-change-transform ring-1 ring-primary/15 hover:ring-2 hover:ring-primary/40 hover:scale-[1.015] p-4 sm:p-6 card-hover">
                               <div className="flex flex-col items-end text-right w-full">
